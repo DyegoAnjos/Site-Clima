@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Previsão do tempo </title>
+</head>
+<body>
+    <main>
+        <h1>Confira o clima:</h1>
+        <div class="input">
+            <input type="text" placeholder="Digite o nome da cidade" id="cidadeInput">
+            <button id="pesquisa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div id="climaInfo" class="hide">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="cidade"></span>
+                <img crossorigin="anonymous" src="" alt="" id="bandeiras">
+            </h2>
+            <p id="temperatura"><span></span>&deg;C</p>
+            <p id="temperaturaMin"><span></span>&deg;C</p>
+            <p id="temperaturaMax"><span></span>&deg;C</p>
+            <div id="descricaoBox">
+                <p id="descricao"></p>
+                <img src="" alt="" id="climaIcone">
+            </div>
+            <div class="detalhesBox">
+                <p id="umidade">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>awef</span>
+                </p>
+                <p id="ventos">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>awef</span>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(33deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 30%;
+    background: #5c54ed;
+    box-shadow: rgba(0, 0, 0, 0.514) 10px 10px 10px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin-bottom:  1rem;
+}
+
+.input{
+    width: 55%;
+    display: flex;
+    gap: 10px; 
+}
+
+.input input{
+    text-align: center;
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius:  4px;
+}
+
+.input button{
+    padding: 0.8rem;
+    min-width: 50px;
+    background-color: #8dd0f5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#climaInfo{
+    width: 70%;
+    border-top:  1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#descricao{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#climaInfo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+#climaInfo h2 i{
+    font-size: 1rem;
+}
+
+#climaInfo span{
+    margin: 0.6rem;
+}
+
+#bandeiras{
+    height: 15px;
+}
+
+#descricaoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+.detalhesBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.detalhesBox #umidade{
+    border-right: 1px solid #fff;
+}
+
+.hide{
+    display: none;
+}
