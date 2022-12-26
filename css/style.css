@@ -36,6 +36,8 @@ h1{
 .input{
     width: 55%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px; 
 }
 
@@ -109,4 +111,33 @@ h1{
 
 .hide{
     display: none;
+}
+
+@media (max-width: 920px){
+    .input{
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .detalhesBox{
+        flex-direction: column;
+    }
+
+    .detalhesBox #umidade{
+        border-right: none;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 700px){
+    main{
+        width: 90%;
+
+        justify-content: center;
+    }
 }
