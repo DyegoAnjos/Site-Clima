@@ -15,6 +15,7 @@ const climaElemento = document.querySelector("#descricao")
 const climaIconElemento = document.querySelector("#climaIcone")
 const umidadeElemento = document.querySelector("#umidade span")
 const ventosElemento = document.querySelector("#ventos span")
+const horario = document.querySelector("#horario span")
 
 const bgDia = "linear-gradient(33deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%)"
 const bgNoite = "linear-gradient(33deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%)"
@@ -53,12 +54,15 @@ const mudarInfosClima = async(cidade) =>{
     if(data.weather[0].icon[2] == "d"){
         document.body.style.background = bgDia
         main.style.background = bgNoite
+        horario.innerText="Horário: Dia"
     }
 
     else{
         document.body.style.background = bgNoite
         main.style.color = "#000000"
         main.style.background = bgDia
+        
+        horario.innerText="Horário: Noite"
     }
 
 }
