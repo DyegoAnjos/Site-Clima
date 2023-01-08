@@ -11,7 +11,9 @@
 body{
     background: linear-gradient(33deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 5rem;
     align-items: center;
     height: 100vh;
 }
@@ -111,6 +113,31 @@ h1{
 
 .hide{
     display: none;
+}
+
+footer{
+    background: #5c54ed;
+    box-shadow: rgba(0, 0, 0, 0.514) 10px 10px 10px;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fdfdfd;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+footer a{
+    color: #fdfdfd;
+}
+
+#social{
+    width: 50%;
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 @media (max-width: 920px){
